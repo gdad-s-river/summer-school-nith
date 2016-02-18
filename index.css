@@ -280,16 +280,16 @@ input {
 
 
 /*Clouds*/
-*{ 
-	box-sizing: border-box; 
-	margin: 0; 
-	padding: 0 
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
 }
 #viewport {
 	display:none;
-	-webkit-perspective: 1000; 
-	-moz-perspective: 1000; 
-	-o-perspective: 1000; 
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -327,8 +327,8 @@ input {
 
 #world div {
 	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;  
-	-o-transform-style: preserve-3d;    
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
 }
 
 .cloudBase {
@@ -395,9 +395,118 @@ input {
 }
 
 .info-3{
-	bottom:-125%
-	left:3%;
+	display: none;
+	position: absolute;
+	margin: 4%;
+	padding: 2%;
+	background-color: rgba( 0, 0, 0, 0.5 );
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: default;
+	color:#eee;
+	font-family: 'Sorts Mill Goudy', serif;
+	font-size: 1.2rem;
+	bottom:-125%;
+	left:25%;
 	width:37%;
+	height:10%;
+}
+
+.info-4{
+	display: none;
+	background-color: black;
+	opacity:0.9;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.info-links{
+	left: 3%;
+	top: -125%;
+	width: 32%;
+	font-size: 0.9rem;
+}
+
+.info-links li{
+	margin-bottom: 2%;
+}
+.info-links h1{
+	color:#ffdb00;
+}
+.info-links a{
+	background: white;
+	color:black;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+	display: inline-block;
+	padding: 2% 2% 2% 2%;
+	margin: 0px 8px 0px;
+	position: relative;
+	text-decoration: none;
+}
+
+.info-links a:hover{
+	background:black;
+	color:white;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+/*on hover underline animatino on .info-link a*/
+.info-links a:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    border-bottom: 5px solid #ffdb00;
+    bottom: 2px;
+		left:0;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: transform: 0.3s ease-in;
+}
+
+.info-links a:hover:before
+{
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+/*END on hover underline animatino on .info-link a*/
+
+.video{
+	position:absolute;
+	top:26%;
+	left:26%;
+}
+
+.video-caption{
+	position:absolute;
+	top:20%;
+	left:30%;
+	font-family: 'Josefin Sans', sans-serif;
+	color:#ffdb00;
+	font-size:1.8rem;
+	margin-bottom:2%;
+}
+
+.video-caption-sub{
+	position:absolute;
+	bottom:24%;
+	left:31%;
+	font-family: 'Josefin Sans', sans-serif;
+	color:white;
+	font-size:1.5rem;
+}
+
+.fa.fa-times-circle{
+	font-size:300%;
+	color:white;
 }
 
 .blue-anchor{
